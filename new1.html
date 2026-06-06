@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+    }
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1f2937;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #4338ca;
+    }
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Web Project</h1>
+    <p>A simple HTML, CSS & JavaScript project</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="card" id="home">
+      <h2>Home</h2>
+      <p>This is a simple web page project. You can use this for college assignments, mini projects, or practice.</p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message"></p>
+    </div>
+
+    <div class="card" id="about">
+      <h2>About</h2>
+      <p>This project demonstrates:
+        <ul>
+          <li>HTML structure</li>
+          <li>CSS styling</li>
+          <li>JavaScript interaction</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: example@email.com</p>
+      <p>Phone: +91 XXXXXXXXXX</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Student Web Project</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "Hello! You clicked the button 🚀";
+    }
+  </script>
+
+</body>
+</html>
